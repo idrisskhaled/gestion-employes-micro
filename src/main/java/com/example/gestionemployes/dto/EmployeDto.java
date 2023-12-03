@@ -16,5 +16,6 @@ public class EmployeDto {
     public String occupation;
     public String firstName;
     public String lastName;
-    public Long userId;
+    public String fileUrl;
+    public Long idUser;
 }

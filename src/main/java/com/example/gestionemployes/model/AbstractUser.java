@@ -16,7 +16,7 @@ import javax.persistence.*;
         discriminatorType = DiscriminatorType.STRING)
 public abstract class AbstractUser extends AbstractBaseEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     @Column(name = "id_user")
     protected Long idUser;
 

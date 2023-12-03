@@ -8,7 +8,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @Validated
-@RequestMapping("api/user/employee")
+@RequestMapping("api/employee")
 public interface IEmployeController {
     @PostMapping()
     EmployeDto createEmploye(@RequestBody @Valid EmployeDto employeDto);

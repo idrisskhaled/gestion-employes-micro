@@ -2,6 +2,7 @@ package com.example.gestionemployes.model;
 
 
 import lombok.*;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
@@ -22,4 +23,7 @@ public class Employe extends AbstractUser {
 
     @Column(name = "occupation")
     private String occupation;
+
+    @Column(name = "file_url", columnDefinition = "TEXT")
+    private String fileUrl;
 }
